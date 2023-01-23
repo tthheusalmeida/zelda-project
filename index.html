@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="./src/image/favico.ico">
+
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/mediaQueries.css">
+
+  <script defer type="text/javascript" src="./src/js/index.js"></script>
+
+  <title>The Legend of Zelda™: Tears of the Kingdom</title>
+</head>
+<body>
+  <div class="background">
+    <video class="background__video" autoplay loop muted>
+      <source src="./src/video/zelda-trailer.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <header class="header">
+    <a>
+      <img class="header__logo" src="./src/image/logo.png" alt="Zelda's symbol with sword" />
+    </a>
+    <nav>
+      <ul class="header__menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.nintendo.com/en-us/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="container__information">
+      <img class="container__image-title" src="./src/image/title.png" alt="Game image logo" />
+      <p class="container__description">
+        Forget everything you know about The Legend of Zelda games. Enter a world of discovery, 
+        exploration and adventure in The Legend of Zelda: Tears of the Kingdom, the new game in 
+        the famous series that came to break barriers. Travel across vast fields, forests and 
+        mountains as you discover what happened to the kingdom of Hyrule in this stunning open-air 
+        adventure.
+      </p>
+      <button class="container__trailer-button">Watch trailer</button>
+    </div>
+    <img class="container__image" src="./src/image/image.png" />
+
+    <div class="modal">
+      <div class="modal__content">
+        <span class="modal__close">X</span>
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/2SNF4M_v7wc"
+          title="Oficial trailer "
+          frameborder="1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen />
+      </div>
+    </div>
+  </main>
+</body>
+</html>
